@@ -13,7 +13,7 @@ class LinkedList:
         self.head = None
         self.length = 0
     def __str__(self):
-        pass
+        return f"LinkedList with {self.length} elements"
 
     def add_to_head(self, value):
         if self.head is None:
@@ -55,7 +55,7 @@ class LinkedList:
 
     def remove_tail(self):
         if self.length == 0:
-            return None
+            return 0
         if(self.length == 1):
             old_val = self.tail.value
             self.head = None
