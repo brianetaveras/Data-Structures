@@ -167,26 +167,3 @@ class DoublyLinkedList:
             max_val = current.value
 
         return max_val
-
-node = ListNode(1)
-list = DoublyLinkedList(node)
-
-
-
-list.delete(node)
-
-
-list.add_to_tail(10)
-
-
-list.add_to_head(9)
-
-
-list.add_to_tail(6)
-
-
-
-list.delete(list.head.next)
-
-print(list.head.next.value, list.tail.value)
-print(list.head.value)
